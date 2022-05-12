@@ -1,0 +1,110 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: #38B6FF;
+    font-family: 'Oswald', sans-serif;
+    
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+header{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    
+}
+body{
+    background-image: url(./5073414.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+header div img {
+    max-width: 150px;
+}
+header ul li {
+    padding: 10px;
+    
+}
+header ul li a {
+    transition: 300ms;
+    
+}
+header ul li a:hover{
+    padding: 10px;
+    color: #0081cc;
+    font-size: 25px;
+    text-decoration: underline;
+    
+}
+.conteiner{
+    text-align: center;
+}
+.conteiner .nome h1 {
+    font-size: 80px;
+    
+}
+#seta{
+    font-size: 25px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+    transition: 300ms;
+}
+.conteiner .nome h5 {
+    font-size: 20px;
+    font-style: italic;
+}
+#sobre {
+    max-width: 600px;
+    margin: 0% auto;
+}
+.form{
+    width: 40%;
+    margin: 0% auto;
+    margin-top: 30px;
+}
+.form input{
+    width: 50%;
+    margin-top: 15px;
+
+}
+.form button{
+    width: 15%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .conteiner .nome h1 {
+        font-size: 30px;
+    }
+    .conteiner .nome h5{
+        font-size: 50%;
+    }
+}

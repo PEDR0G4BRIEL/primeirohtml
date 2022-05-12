@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="stiles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+    <title>::Pedro Gabriel::</title>
+</head>
+<body>
+    <header>
+        <div>
+           <a href="Untitled-1.html"> <img src="./PG-removebg-preview.png" alt="PEDRO GABRIEL"></a>
+            
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/pedro-gabriel-b19838236/"> Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:pedroncps@hotmail.com"> Email</a>
+             </li>
+            <li>
+                <a target="_blank" href="https://wa.me/19991606671"> whatsApp</a>
+            </li>
+        
+        </ul>
+
+
+    </header>
+    <main>
+        <section class="conteiner">
+            <div class="nome">
+                <h1>Pedro Gabriel</h1>
+                <h5>fullstack apprentice</h5>
+
+            </div>
+            <div onclick="displayAbout()" id="seta">
+                <i id="animation" class="fa-solid fa-arrow-down"></i>
+
+            </div>
+            <div style="display: none;" id="sobre">
+                <p>
+                    Meu nome é Pedro Gabriel tenho 24 anos atualmente morador de campinas-SP
+                    estou estudando para ser um desenvolvedor fullstack no projeto hiring coders
+                    meu primeiro projeto é este portifolio. Trabalho atualmente de motoboy e de porteiro, sempre amei tecnologia sendo desde criança 
+                    muito curioso e sempre aprendendo mais sobre o assunto, pretendo estar trabalhando na area logo e ajudar muitas empresas com meus software. 
+                </p>
+            </div>
+            <div class="form">
+                <h5> deixe seu contato!!</h5>
+                <form action="">
+                    <input type="text" placeholder="DIGITE SEU EMAIL:">
+                    <button> enviar! </button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    
+
+    <script>
+        function displayAbout() {
+            var seta = document.getElementById('animation');
+            seta.classList.toggle('rotate')
+            
+            var display = document.getElementById('sobre');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
